@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "-----> Nothing to do."
+# http://stackoverflow.com/questions/31006154/how-can-i-avoid-loading-buildpack-components-from-cache-on-bluemix
+rm -rfv $2/*
+
